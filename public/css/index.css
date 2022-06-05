@@ -1,0 +1,210 @@
+section.welcome-section {
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: calc(100vh - 6rem);
+}
+section.welcome-section > h1 {
+  font-size: 4rem;
+  color: var(--color-secondary);
+  font-weight: 300;
+  z-index: 1;
+}
+
+h1.welcome-text-1 {
+  grid-column: 3/9;
+  grid-row: 3;
+}
+
+h1.welcome-text-2 {
+  grid-column: 4/12;
+  grid-row: 6;
+}
+
+h1.welcome-text-3 {
+  grid-column: 4/16;
+  grid-row: 8;
+}
+
+div.welcome-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotateX(90deg);
+  z-index: 0;
+}
+div.welcome-bg.purple-bg {
+  height: 60rem;
+  width: 180rem;
+  background: linear-gradient(60deg, var(--color-primary) 5%, transparent);
+}
+div.welcome-bg.gray-bg {
+  height: 90rem;
+  width: 120rem;
+  background: #222;
+  z-index: -1;
+}
+div.welcome-bg.face-bg {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 30rem;
+  background: url("/images/shang3.png") no-repeat center center;
+  background-size: contain;
+  background-color: var(--color-secondary);
+  z-index: 1;
+}
+
+div.welcome-showtime.purple-bg {
+  transform: rotateX(0) rotateZ(-30deg) translateX(-20rem) translateY(-20rem);
+}
+div.welcome-showtime.gray-bg {
+  transform: rotateX(0) rotateZ(90deg) translateY(20rem);
+}
+div.welcome-showtime.yellow-bg {
+  transform: rotateX(0) translateY(4rem);
+}
+div.welcome-showtime.face-bg {
+  transform: rotateX(0) translateX(35rem);
+}
+
+h1.welcome-showtime.welcome-text-1 {
+  background: linear-gradient(150deg, var(--color-background) 46.1%, var(--color-tertiary) 46.1%);
+  background-clip: text;
+  color: transparent !important;
+  -webkit-background-clip: text;
+}
+h1.welcome-showtime.welcome-text-2, h1.welcome-showtime.welcome-text-3 {
+  color: var(--color-white) !important;
+}
+h1.welcome-showtime > a {
+  display: inline-block;
+  color: var(--color-white) !important;
+  padding: 0 1rem;
+  border: 0.5rem solid #c74b60;
+  border-radius: 2rem;
+}
+h1.welcome-showtime > a:hover {
+  cursor: pointer;
+  background: pink;
+  color: var(--color-primary) !important;
+  border-color: pink;
+}
+
+h1.hidden {
+  visibility: hidden;
+}
+
+header {
+  width: 100%;
+  height: 6rem;
+  background: var(--color-white);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+nav {
+  width: var(--view-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > a {
+  font-size: 3rem;
+  border: 0.2rem solid transparent;
+  color: var(--color-primary);
+}
+nav > ul {
+  display: flex;
+}
+nav > ul li {
+  padding: 0 2rem;
+}
+nav > ul li > a {
+  border: 0.2rem solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+nav > ul li > a:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+footer {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+footer ul {
+  width: var(--view-width);
+  display: flex;
+  margin: auto;
+}
+footer ul li {
+  padding: 0 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+:root {
+  --color-primary: #5c2c59;
+  --color-secondary: #1D4942;
+  --color-tertiary: #e63b5a;
+  --color-background: #f1cec9;
+  --color-white: #fff;
+  --color-black: #222;
+  --view-width: 120rem;
+}
+
+.dark-mode {
+  --color-primary: #A9DDD6;
+  --color-secondary: #FFA69E;
+  --color-background: #401F3E;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--color--white);
+}
+body main {
+  margin: 6rem auto;
+  width: var(--view-width);
+  min-height: calc(100vh - 12rem);
+}
+body main * {
+  transition: all 0.5s ease;
+}
+
+section {
+  margin-bottom: 3.2rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,41 @@
+header {
+  width: 100%;
+  height: 6rem;
+  background: var(--color-white);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+nav {
+  width: var(--view-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > a {
+    font-size: 3rem;
+    border: .2rem solid transparent;
+    color: var(--color-primary);
+  }
+  > ul { 
+    display: flex;
+    li {
+      padding: 0 2rem;
+      > a {
+        border: .2rem solid transparent;
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
+        color: var(--color-primary);
+      }
+      > a:hover {
+        border-color: var(--color-primary);
+        background: var(--color-primary);
+        color: var(--color-background);
+      }
+    }
+  }
+}
+

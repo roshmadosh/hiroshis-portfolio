@@ -1,0 +1,113 @@
+
+section.welcome-section {
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: calc(100vh - 6rem);
+  > h1 {
+    font-size: 4rem;
+    color: var(--color-secondary);
+    font-weight: 300;
+    z-index: 1;
+  }
+}
+
+h1.welcome-text-1 {
+  grid-column: 3/9;
+  grid-row: 3;
+}
+
+h1.welcome-text-2 {
+  grid-column: 4/12;
+  grid-row: 6;
+
+}
+
+h1.welcome-text-3 {
+  grid-column: 4/16;
+  grid-row: 8;
+}
+
+div.welcome-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotateX(90deg);
+  z-index: 0;
+  &.purple-bg {
+    height: 60rem;
+    width: 180rem; 
+    background: 
+      linear-gradient(60deg, var(--color-primary) 5%, transparent)
+    ;
+  }
+  &.gray-bg {
+    height: 90rem;
+    width: 120rem;
+    background: #222; 
+    z-index: -1;
+  }
+  &.face-bg {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 30rem;
+    background: url("/images/shang3.png") no-repeat center center;
+    background-size: contain;
+    background-color: var(--color-secondary);
+    z-index: 1;
+  }
+}
+
+
+div.welcome-showtime {
+  &.purple-bg {
+    transform: rotateX(0) rotateZ(-30deg) translateX(-20rem) translateY(-20rem);
+  }
+
+  &.gray-bg {
+    transform: rotateX(0) rotateZ(90deg) translateY(20rem);
+  }
+  &.yellow-bg {
+    transform: rotateX(0) translateY(4rem);
+  }
+  &.face-bg {
+    transform: rotateX(0) translateX(35rem);
+  }
+  
+}
+
+h1.welcome-showtime {
+  &.welcome-text-1 {
+    background: linear-gradient(150deg, var(--color-background) 46.1%, var(--color-tertiary) 46.1%);
+    background-clip: text;
+    color: transparent !important;
+    -webkit-background-clip: text;
+  }
+  &.welcome-text-2, &.welcome-text-3{
+    color: var(--color-white) !important;
+  }
+  > a {
+    display: inline-block;
+    color: var(--color-white) !important;
+    padding: 0 1rem;
+    border: .5rem solid rgb(199, 75, 96);
+    border-radius: 2rem;
+    &:hover {
+      cursor: pointer;
+      background: pink;
+      color: var(--color-primary)!important;
+      border-color: pink;
+    }
+  }
+}
+
+
+
+h1.hidden {
+  visibility: hidden;
+}

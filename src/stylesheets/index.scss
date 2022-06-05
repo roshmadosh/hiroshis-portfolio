@@ -1,0 +1,55 @@
+@import './pages/home';
+@import './partials/header';
+@import './partials/footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:  border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+:root {
+  --color-primary: #5c2c59;
+  --color-secondary: #1D4942;
+  --color-tertiary: #e63b5a;
+  --color-background: #f1cec9;
+  --color-white: #fff;
+  --color-black: #222;
+  --view-width: 120rem;
+}
+
+.dark-mode {
+  --color-primary: #A9DDD6;
+  --color-secondary: #FFA69E;
+  --color-background: #401F3E;
+}
+
+html {
+  font-size: 62.5%; // 10px but won't overwrite custom browser font-sizes
+}
+
+body {
+  background: var(--color--white);
+
+  main {
+    margin: 6rem auto;
+    width: var(--view-width);
+    min-height: calc(100vh - 12rem);
+    * {
+      transition: all 0.5s ease;
+    }
+  }
+}
+section {
+  margin-bottom: 3.2rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
