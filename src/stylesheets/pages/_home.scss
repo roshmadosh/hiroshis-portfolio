@@ -5,7 +5,7 @@ section.welcome-section {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  height: calc(100vh - 6rem);
+  height: 65.4rem;
   > h1 {
     font-size: 4rem;
     color: var(--color-secondary);

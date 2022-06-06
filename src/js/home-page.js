@@ -14,13 +14,3 @@ container.addEventListener('mouseover', (ev) => {
     })
   }
 })
-
-// welcomeSection.addEventListener('mouseover', () => {
-//   welcomeBgs.forEach(bg => {
-//     bg.classList.add('welcome-showtime');
-//   });
-//   welcomeTexts.forEach(text => {
-//     text.classList.remove('hidden');
-//     text.classList.add('welcome-showtime');
-//   })
-// })

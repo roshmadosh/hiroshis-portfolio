@@ -1,3 +1,7 @@
+/**
+ * No longer used
+ */
+
 (function includeHTML() {
   const pageContent = Array.from(document.getElementsByTagName('*'));
   pageContent.filter(ele => !!ele.getAttribute('include-html'))

@@ -11,11 +11,34 @@
   <title>hiroshi's portfolio</title>
 </head>
 <body id="body">
-  <div include-html="/html/partials/header.html"></div>
+  <header>
+  <nav>
+    <a href="#welcome">Portfoleo</a>
+    <ul>
+      <li><a href="#">projects</a></li>
+      <li><a href="#">resume</a></li>
+      <li><a href="#">contact</a></li>
+    </ul>
+  </nav>
+</header>
   <main>
-    <div include-html="/html/sections/home.html"></div>
+    <section id="welcome" class="welcome-section grid">
+  <h1 class="welcome-text-1 welcome-text">Get out.</h1>
+  <h1 class="welcome-text-2 welcome-text hidden">Just kidding.</h1>
+  <h1 class="welcome-text-3 welcome-text hidden">These are my <a href="#projects">projects</a>.</h1>
+  <div class="welcome-bg purple-bg"></div>
+  <div class="welcome-bg gray-bg"></div>
+  <div class="welcome-bg face-bg"></div>
+</section>
+
   </main>
-  <div include-html="/html/partials/footer.html"></div>
+  <footer>
+  <ul>
+    <li>github</li>
+    <li>linkedin</li>
+    <li>instagram</li>
+  </ul>
+</footer>
 
   <script src="/js/include-html.min.js"></script>
   <script src="/js/main.min.js" defer></script>
